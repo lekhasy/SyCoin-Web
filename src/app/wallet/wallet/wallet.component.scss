@@ -3,8 +3,3 @@
 :host {
     @include body-content-padding();
 }
-
-.title-section {
-    display: flex;
-    justify-content: space-between;   
-}

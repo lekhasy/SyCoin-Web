@@ -14,13 +14,8 @@ export class WalletComponent implements OnInit {
 
   ngOnInit() {
     if (!this.accountService.IsUserLoggedIn()) {
-      this.router.navigate(['/login']);
+      this.router.navigate(['/']);
     }
-  }
-
-  handleLogout(): void {
-    this.accountService.LogoutUser();
-    this.router.navigate(['/login']);
   }
 
 }

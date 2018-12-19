@@ -1,6 +1,11 @@
-<div class="body-content flex-container full-height flex-mainaxis-center flex-crossaxis-center">
-  <div>
-      <input hidden id="fileInput" type="file" (change)="handleFileChanged($event.target.files)"/>
-      <button mat-raised-button color="primary" (click)="handleUploadButtonClicked()">Import public key file</button>
-  </div>
+<div class="body-content flex-column-container flex-main-center flex-cross-center">
+  <span>Login by</span>
+  <section>
+    <input hidden id="fileInput" type="file" (change)="handleFileChanged($event.target.files)" />
+    <button class="action-button" mat-raised-button color="primary" (click)="handleUploadButtonClicked()">Select your public key file</button>
+  </section>
+  <section class="signup-section">
+    <span>Don't have public key?</span>
+    <a routerLink="../get-key" class="action-button" mat-stroked-button color="primary">Get one</a>
+  </section>
 </div>

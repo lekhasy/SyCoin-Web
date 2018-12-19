@@ -1,5 +1,7 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div class="nav mat-elevation-z8">
-  <h2>SyCoin</h2>
+  <a mat-button routerLink="/"><h2>SyCoin</h2></a>
+  <button *ngIf="accountService.IsUserLoggedIn()" mat-button (click)="handleLogout()">Logout</button>
+  <a *ngIf="!accountService.IsUserLoggedIn()" mat-button routerLink="account/login">Login</a>
 </div>
 <router-outlet></router-outlet>

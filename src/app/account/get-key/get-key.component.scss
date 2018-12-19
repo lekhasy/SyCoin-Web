@@ -1,0 +1,22 @@
+@import '../../../variables.scss';
+
+:host {
+    @include body-content-padding();
+}
+
+mat-card {
+    margin-bottom: 8px;
+}
+
+.private-key {
+    button {
+        color: red;
+    }
+}
+
+
+.public-key {
+    button {
+        color: lime;
+    }
+}

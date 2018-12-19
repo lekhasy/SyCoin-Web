@@ -1,3 +1,34 @@
-<p>
-  get-key works!
-</p>
+<h3>Get key</h3>
+
+<mat-card class="private-key">
+  <mat-card-header>
+    <mat-card-title >Private Key</mat-card-title>
+    <mat-card-subtitle>Think of it like your bank account password</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <p>
+      Use this key to generate your public key, create transaction ...<br>
+      You can only have this key one time, there are no backup.<br>
+      So, keep this safe.
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button>Download new private key</button>
+  </mat-card-actions>
+</mat-card>
+<mat-card class="public-key">
+  <mat-card-header>
+    <mat-card-title>Public Key</mat-card-title>
+    <mat-card-subtitle>Think of it like your bank account number</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <p>
+      This is public infomation, <br>
+      People will send money to this address (this key).
+      You can re-generate this with your private key.
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button>Download public key from private key</button>
+  </mat-card-actions>
+</mat-card>

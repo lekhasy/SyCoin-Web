@@ -1,0 +1,14 @@
+@import "~@angular/material/theming";
+
+// https://github.com/angular/material2/tree/7.1.x/src/lib/core/theming/prebuilt
+
+$primary-palette: mat-palette($mat-purple, 700, 500, 800);
+$accent-palette: mat-palette($mat-green, A200, A100, A400);
+
+// re-define the purple-green theme
+$app-theme: mat-dark-theme($primary-palette, $accent-palette);
+
+@mixin body-content-padding() {
+  padding-right: 8px;
+  padding-left: 8px;
+}

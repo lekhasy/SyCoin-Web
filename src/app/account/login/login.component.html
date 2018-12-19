@@ -1,0 +1,6 @@
+<div class="body-content flex-container full-height flex-mainaxis-center flex-crossaxis-center">
+  <div>
+      <input hidden id="fileInput" type="file" (change)="handleFileChanged($event.target.files)"/>
+      <button mat-raised-button color="primary" (click)="handleUploadButtonClicked()">Import public key file</button>
+  </div>
+</div>

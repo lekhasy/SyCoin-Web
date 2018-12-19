@@ -1,0 +1,13 @@
+@import "~@angular/material/theming";
+@import '../variables.scss';
+
+:host {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.nav {
+    background-color: mat-color($primary-palette);
+    padding-left: 8px;
+}
